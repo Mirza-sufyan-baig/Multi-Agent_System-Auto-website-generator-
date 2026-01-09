@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDev Studio</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <header class="sidebar-header">
+                <div class="logo">
+                    <i data-lucide="zap" class="logo-icon"></i>
+                    <span class="logo-text">AutoDev</span>
+                </div>
+                <button class="icon-btn" onclick="toggleSidebar()" title="Toggle Sidebar">
+                    <i data-lucide="panel-left"></i>
+                </button>
+            </header>
+            
+            <div class="project-list-header">
+                <span class="header-text">RECENT PROJECTS</span>
+                <button class="icon-btn-sm" onclick="createNewProject()" title="New Project">
+                    <i data-lucide="plus"></i>
+                </button>
+            </div>
+
+            <div id="projectList" class="project-list">
+                <!-- Projects injected here -->
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <span class="dot"></span> <span id="statusText" class="status-text">Offline</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <section class="chat-section">
+            <div id="chatArea" class="chat-area">
+                <div class="msg-system">
+                    <p><strong>AutoDev AI</strong></p>
+                    <p>Hello! Select a project or create a new one to start building.</p>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <div class="input-box">
+                    <textarea id="promptInput" placeholder="Describe your web app..." rows="1"></textarea>
+                    <button id="sendBtn" class="send-btn">
+                        <i data-lucide="arrow-up" class="send-icon"></i>
+                        <i data-lucide="loader-2" class="spinner-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preview Area -->
+        <section class="preview-section">
+            <header class="preview-header">
+                <div class="device-toggles">
+                    <button class="icon-btn active" onclick="setDevice('desktop')" title="Desktop">
+                        <i data-lucide="monitor"></i>
+                    </button>
+                    <button class="icon-btn" onclick="setDevice('tablet')" title="Tablet">
+                        <i data-lucide="tablet"></i>
+                    </button>
+                    <button class="icon-btn" onclick="setDevice('mobile')" title="Mobile">
+                        <i data-lucide="smartphone"></i>
+                    </button>
+                </div>
+                
+                <div class="url-bar" id="projectUrl">Waiting for deployment...</div>
+                
+                <div class="preview-actions">
+                    <button class="icon-btn" onclick="reloadPreview()" title="Refresh">
+                        <i data-lucide="refresh-cw"></i>
+                    </button>
+                    <button class="icon-btn" onclick="openExternal()" title="Open New Tab">
+                        <i data-lucide="external-link"></i>
+                    </button>
+                </div>
+            </header>
+            
+            <div class="preview-stage">
+                <div id="deviceWrapper" class="device-wrapper mode-desktop">
+                    <iframe id="previewFrame" src="about:blank"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="static/js/app.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+websockets
+python-dotenv
+langgraph
+langchain
+langchain-groq
+langchain-google-genai
+langfuse
+pyyaml
+requests

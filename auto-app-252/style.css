@@ -1,0 +1,81 @@
+/* Color Scheme */
+:root {
+    --primary-color: #F7D2C4;
+    --secondary-color: #964B00;
+    --accent-color: #FFC080;
+    --primary-bg: #D4B798; /* New variable for primary background color */
+    --secondary-bg: #F5F5F5; /* New variable for secondary background color */
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--primary-bg); /* Updated to use new primary background color variable */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Spacing */
+body {
+    margin: 16px;
+    padding: 16px;
+}
+
+header, main, footer {
+    margin: 16px;
+    padding: 16px;
+}
+
+/* Utility Classes */
+.primary-color {
+    color: var(--primary-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.accent-color {
+    color: var(--accent-color);
+}
+
+.primary-background {
+    background-color: var(--primary-color);
+}
+
+.secondary-background {
+    background-color: var(--secondary-color);
+}
+
+.accent-background {
+    background-color: var(--accent-color);
+}
+
+/* Contrast Adjustments */
+.text-color {
+    color: #333; /* Adjusted text color for better contrast with new background color */
+}
+
+.button-color {
+    background-color: #FFC080; /* Adjusted button color for better contrast with new background color */
+    color: #333; /* Adjusted button text color for better contrast with new background color */
+}
+
+.button-color:hover {
+    background-color: #FFA07A; /* Adjusted button hover color for better contrast with new background color */
+}
+
+/* Additional Contrast Adjustments for Specific Elements */
+header, footer {
+    background-color: var(--secondary-bg); /* Added secondary background color for better contrast */
+    color: #333; /* Adjusted text color for better contrast with new background color */
+}
+
+main {
+    background-color: var(--primary-bg); /* Updated to use new primary background color variable */
+    color: #333; /* Adjusted text color for better contrast with new background color */
+}

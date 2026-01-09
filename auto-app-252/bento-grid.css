@@ -1,0 +1,68 @@
+/* Define grid container class */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+}
+
+/* Define grid item classes */
+.bento-grid-item {
+    grid-column: span 1;
+}
+
+.bento-grid-item-2 {
+    grid-column: span 2;
+}
+
+.bento-grid-item-3 {
+    grid-column: span 3;
+}
+
+.bento-grid-item-4 {
+    grid-column: span 4;
+}
+
+.bento-grid-item-5 {
+    grid-column: span 5;
+}
+
+.bento-grid-item-6 {
+    grid-column: span 6;
+}
+
+.bento-grid-item-7 {
+    grid-column: span 7;
+}
+
+.bento-grid-item-8 {
+    grid-column: span 8;
+}
+
+.bento-grid-item-9 {
+    grid-column: span 9;
+}
+
+.bento-grid-item-10 {
+    grid-column: span 10;
+}
+
+.bento-grid-item-11 {
+    grid-column: span 11;
+}
+
+.bento-grid-item-12 {
+    grid-column: span 12;
+}
+
+/* Define grid layout for different screen sizes */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .bento-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

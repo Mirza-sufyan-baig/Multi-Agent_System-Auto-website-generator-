@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Vista - Italian Restaurant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-orange-900 via-amber-900 to-red-900 min-h-screen text-white">
+    <!-- Hero -->
+    <header class="relative h-screen flex items-center justify-center text-center">
+        <nav class="absolute top-0 left-0 right-0 flex justify-between items-center p-6">
+            <div class="text-2xl font-bold">Bella Vista</div>
+            <div class="space-x-6">
+                <a href="#menu" class="hover:text-orange-300">Menu</a>
+                <a href="#about" class="hover:text-orange-300">About</a>
+                <a href="#contact" class="hover:text-orange-300">Contact</a>
+            </div>
+        </nav>
+        <div>
+            <p class="text-orange-300 text-xl mb-4">Welcome to</p>
+            <h1 class="text-6xl md:text-8xl font-bold mb-6">Bella Vista</h1>
+            <p class="text-xl text-orange-200 mb-8">Authentic Italian Cuisine Since 1985</p>
+            <button
+                class="bg-white text-orange-900 px-8 py-3 rounded-full font-semibold hover:bg-orange-100 transition">Reserve
+                a Table</button>
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <section id="menu" class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Menu</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="text-5xl mb-4">🍝</div>
+                <h3 class="text-xl font-semibold mb-2">Pasta</h3>
+                <p class="text-orange-200">Handmade daily with fresh ingredients</p>
+                <p class="mt-4 font-semibold">From $15</p>
+            </div>
+            <div class="text-center">
+                <div class="text-5xl mb-4">🍕</div>
+                <h3 class="text-xl font-semibold mb-2">Pizza</h3>
+                <p class="text-orange-200">Wood-fired in our traditional oven</p>
+                <p class="mt-4 font-semibold">From $18</p>
+            </div>
+            <div class="text-center">
+                <div class="text-5xl mb-4">🥗</div>
+                <h3 class="text-xl font-semibold mb-2">Antipasti</h3>
+                <p class="text-orange-200">Fresh starters to share</p>
+                <p class="mt-4 font-semibold">From $12</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-black/20 py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+                <p class="text-orange-200 text-lg leading-relaxed">Family-owned for three generations, Bella Vista
+                    brings the authentic flavors of Italy to your table. Every dish is prepared with love, using recipes
+                    passed down through our family.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Visit Us</h2>
+                <p class="text-orange-200 mb-4">📍 123 Main Street, New York, NY</p>
+                <p class="text-orange-200 mb-4">📞 (555) 123-4567</p>
+                <p class="text-orange-200">🕐 Mon-Sun: 11am - 10pm</p>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Reservations</h2>
+                <p class="text-orange-200 mb-4">Book your table for a memorable dining experience.</p>
+                <button
+                    class="bg-white text-orange-900 px-8 py-3 rounded-full font-semibold hover:bg-orange-100 transition">Book
+                    Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-8 text-center text-orange-200">
+        <p>© 2024 Bella Vista. Buon Appetito! 🍷</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+model_map:
+  manager:
+    provider: "groq"
+    model: "moonshotai/kimi-k2-instruct"
+  architect:
+    provider: "groq"
+    model: "llama-3.3-70b-versatile"
+  developer_pool:
+    - { provider: "groq", model: "openai/gpt-oss-120b" }
+    - { provider: "groq", model: "moonshotai/kimi-k2-instruct" }
+    - { provider: "groq", model: "llama-3.3-70b-versatile" }
+    - { provider: "groq", model: "qwen/qwen3-32b" }
+
+logging:
+  workspace_log: "workspace_log.json"
+  langfuse_enabled: true

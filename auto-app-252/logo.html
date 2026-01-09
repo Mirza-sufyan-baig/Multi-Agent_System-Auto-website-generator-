@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Cup Logo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Color Scheme */
+        :root {
+            --primary-color: #F7D2C4;
+            --secondary-color: #964B00;
+            --accent-color: #FFC080;
+        }
+
+        /* Fonts */
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-#F7D2C4 text-#964B00 flex justify-center items-center h-screen">
+    <div class="flex flex-col items-center justify-center">
+        <div class="w-48 h-48 bg-#F7D2C4 rounded-full flex justify-center items-center">
+            <div class="w-24 h-24 bg-#964B00 rounded-full flex justify-center items-center">
+                <div class="text-5xl logo-text text-#F7D2C4">&#9786;</div>
+            </div>
+        </div>
+        <h1 class="text-3xl logo-text mt-4">Cozy Cup</h1>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

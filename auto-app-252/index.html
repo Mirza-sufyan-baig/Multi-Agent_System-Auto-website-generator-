@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Cup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-#F7D2C4 text-#964B00 font-open-sans">
+    <header class="p-4 bg-#F7D2C4 text-#964B00 flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Cozy Cup</h1>
+        <nav class="flex gap-4">
+            <a href="#" class="text-#964B00 hover:text-#FFC080">Home</a>
+            <a href="#" class="text-#964B00 hover:text-#FFC080">Menu</a>
+            <a href="#" class="text-#964B00 hover:text-#FFC080">About</a>
+            <a href="#" class="text-#964B00 hover:text-#FFC080">Contact</a>
+        </nav>
+    </header>
+    <main class="p-8 flex flex-col items-center justify-center gap-6">
+        <!-- Hero Section -->
+        <section id="hero" class="p-12 flex flex-col items-center justify-center h-screen">
+            <h1 class="text-5xl font-bold mb-6">Welcome to Cozy Cup</h1>
+            <p class="text-2xl mb-6">Experience the best coffee in town</p>
+            <button class="rounded-full px-6 py-2 font-medium transition bg-#FFC080/50 hover:bg-#FFC080">Learn More</button>
+        </section>
+        <!-- Story Section -->
+        <section id="story" class="p-8 flex flex-col items-center justify-center gap-6">
+            <h2 class="text-3xl font-bold">Our Story</h2>
+            <p class="text-xl">Our coffee shop is dedicated to providing high-quality coffee and a welcoming atmosphere. We source our beans from local roasters and take pride in our expertly crafted drinks.</p>
+            <button class="rounded-full px-6 py-2 font-medium transition bg-#FFC080/50 hover:bg-#FFC080">Read More</button>
+        </section>
+        <!-- Location Section -->
+        <section id="location" class="p-8 flex flex-col items-center justify-center gap-6">
+            <h2 class="text-3xl font-bold">Find Us</h2>
+            <p class="text-xl">123 Main St, Anytown, USA</p>
+            <button class="rounded-full px-6 py-2 font-medium transition bg-#FFC080/50 hover:bg-#FFC080">Get Directions</button>
+            <div class="w-full h-64 bg-#FFC080/10 border border-#FFC080/20 rounded-2xl"></div>
+        </section>
+    </main>
+    <footer class="p-4 bg-#F7D2C4 text-#964B00 flex justify-between items-center">
+        <p class="text-xl">2024 Cozy Cup. All rights reserved.</p>
+        <div class="flex gap-4">
+            <a href="#" class="text-#964B00 hover:text-#FFC080">Facebook</a>
+            <a href="#" class="text-#964B00 hover:text-#FFC080">Instagram</a>
+            <a href="#" class="text-#964B00 hover:text-#FFC080">Twitter</a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
